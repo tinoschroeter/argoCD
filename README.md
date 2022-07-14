@@ -1,5 +1,7 @@
 # Argo CD
 
+> Install and configure Argo CD
+
 ```bash
 admin
 kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.password}" | base64 -d
@@ -14,3 +16,5 @@ spec:
     - argocd-server
     - --insecure # <-- this thing needs to be added
 ```
+
+[Blogs and Presentations](https://github.com/argoproj/argo-cd#blogs-and-presentations)
